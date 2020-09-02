@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body class=bg>
+        
+    
+        <div class="text">
+        
+            <h3 id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit 1</h3>
+            <h3 id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit 2</h3>
+            <h3 id="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit 3</h3>
+            <button onclick="myFunction()">Rainbow</button>
+            <button onclick="yourfunction()">Stop</button>
+            <br>
+            <br>
+            <a onclick="changepict1()"><button>Picture1</button>
+            <a onclick="changepict2()"><button>Picture2</button>
+            <a onclick="changepict3()"><button>Delete</button>
+            <br>
+            <br>
+
+            <a onclick="changebgRed()"><button>Red</button>
+            <a onclick="changebgYellow()"><button>Yellow</button>
+            <a onclick="changebgGreen()"><button>Green</button>
+            <a onclick="changebgPurple()"><button>Purple</button>
+            <a onclick="changebgBlue()"><button>Blue</button>
+            <a onclick="changebgWhite()"><button>White</button>    
+           
+            <div id="picture"></div>
+           
+        </div>
+    
+        <script>
+            let text1 = document.getElementById("text1");
+            let text2 = document.getElementById("text2");
+            let text3 = document.getElementById("text3");
+           
+            const colors = ["red", "blue", "green", "orange", "yellow"];
+
+            document.getElementById("text1").innerHTML = "Hey, welcome!";
+            document.getElementById("text2").innerHTML = "This is";
+            document.getElementById("text3").innerHTML = "Day 1 challenge";
+
+            function changepict1 () {
+                document.getElementById("picture").innerHTML="<img src=Foto/thumb-1920-815338.png>";
+            }
+            function changepict2 () {
+                document.getElementById("picture").innerHTML="<img src=Foto/thumb-1920-809353.png>";    
+            }
+            
+            function changepict3 () {
+                document.getElementById("picture").innerHTML="<div></div>"
+            }
+          
+            function myFunction() {
+             myVar = setInterval(changecolor, 1000);
+             }
+
+            function changecolor() {
+            var x = document.getElementById("text1");
+            if (x.style.color == "red") {
+            x.style.color = "yellow";
+            } else if (x.style.color == "yellow") {
+            x.style.color = "green";
+            } else {
+            x.style.color = "red";
+            }
+
+            var x = document.getElementById("text2");
+            if (x.style.color == "red") {
+            x.style.color = "yellow";
+            } else if (x.style.color == "yellow") {
+            x.style.color = "green";
+            } else {
+            x.style.color = "red";
+            }
+
+            var x = document.getElementById("text3");
+            if (x.style.color == "red") {
+            x.style.color = "yellow";
+            } else if (x.style.color == "yellow") {
+            x.style.color = "green";
+            } else {
+            x.style.color = "red";
+            }
+            }
+
+            function yourfunction() {
+            clearTimeout(myVar);
+
+            }
+            function changebgRed() {
+            document.querySelector(".bg").style.backgroundColor = "red";
+            }
+
+            function changebgYellow() {
+            document.querySelector(".bg").style.backgroundColor = "yellow";
+            }
+
+            function changebgGreen() {
+            document.querySelector(".bg").style.backgroundColor = "green";
+            }
+
+
+            function changebgPurple() {
+            document.querySelector(".bg").style.backgroundColor = "purple";
+            }
+
+            function changebgBlue() {
+            document.querySelector(".bg").style.backgroundColor = "blue";
+            }
+
+            function changebgWhite() {
+            document.querySelector(".bg").style.backgroundColor = "white";
+            }
+            </script>
+           
+           <style>
+             #text1 {
+             font-size: 50px;
+                }
+
+            #text2 {
+             font-size: 50px;
+                }
+
+            #text3 {
+            font-size: 50px;
+
+                }
+           </style>
+      
+    </body>
+</html>
+        
+    </body>
+</html>
