@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <script>
+      var a = parseInt(prompt("First Number"));
+      var b = prompt("Enter Your Operator + - * /");
+      var c = parseInt(prompt("Second Number"));
+
+      switch (b) {
+        case "+":
+          b = a + c;
+          document.write("Your Answer is : " + b);
+          break;
+
+        case "-":
+          b = a - c;
+          document.write("Your Answer is : " + b);
+          break;
+
+        case "*":
+          b = a * c;
+          document.write("Your Answer is : " + b);
+          break;
+
+        case "/":
+          b = a / c;
+          document.write("Your Answer is : " + b);
+          break;
+
+        default:
+          document.write("Invalid");
+      }
+    </script>
+  </body>
+</html>
