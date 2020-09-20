@@ -13,20 +13,9 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Welcome</h1>
 
-              <hr />
-
-              <p>This Website is Created using "react-mdl"</p>
+              <p>This My first website using React-Mdl</p>
 
               <div className="social-links">
-                {/* Gitlab */}
-                <a
-                  href="https://gitlab.com/kykho3"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <i className="fa fa-gitlab" aria-hidden="true" />
-                </a>
-
                 {/* Github */}
                 <a
                   href="https://github.com/Jacky-Sanjaya"
@@ -34,6 +23,14 @@ class Landing extends Component {
                   target="_blank"
                 >
                   <i className="fa fa-github-square" aria-hidden="true" />
+                </a>
+                {/* Gitlab */}
+                <a
+                  href="https://gitlab.com/kykho3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa fa-gitlab" aria-hidden="true" />
                 </a>
 
                 {/* Youtube */}

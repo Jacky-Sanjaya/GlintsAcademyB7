@@ -48,9 +48,7 @@ const murid = new Student(
 );
 console.log(murid);
 murid.name = "NewJacky";
-console.log(murid);
 murid.addhobi("Maen");
-console.log(murid);
 murid.addhobi("Tidor");
-murid.removeHobi("Maen");
+murid.removeHobi("makan");
 console.log(murid);

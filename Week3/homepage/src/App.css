@@ -98,27 +98,27 @@
 }
 
 .banner-text {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   opacity: 0.8;
-  width: 75%;
+  width: 50%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 300px;
 }
 
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .banner-text hr {
-  border-top: 5px dotted white;
+  border-top: 5px dotted black;
   width: 50%;
   margin: auto;
 }
 
 .banner-text p {
-  color: white;
+  color: black;
   font-size: 20px;
   padding: 1em;
 }
@@ -131,7 +131,7 @@
 }
 
 .social-links i {
-  color: white;
+  color: black;
   font-size: 5em;
   padding: 8px;
 }
@@ -153,10 +153,6 @@
   margin-right: auto;
 }
 .tugas {
-  margin-left: auto;
-  margin-right: auto;
-}
-.tugas1 {
   margin-left: auto;
   margin-right: auto;
 }
