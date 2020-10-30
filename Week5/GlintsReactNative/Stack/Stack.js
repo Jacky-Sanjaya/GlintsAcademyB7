@@ -8,6 +8,7 @@ import Intro from './Intro';
 import LoginIndex from './Login';
 import Register from './Register';
 import Home from './Home';
+import Drawers from './Drawer/Drawer';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -18,6 +19,7 @@ const StackNavigator = () => {
       <Stack.Screen name="Intro" component={Intro} />
       <Stack.Screen name="Login" component={LoginIndex} />
       <Stack.Screen name="Register" component={Register} />
+      <Stack.Screen name="Drawers" component={Drawers} />
       <Stack.Screen name="Home" component={Home} />
     </Stack.Navigator>
   );

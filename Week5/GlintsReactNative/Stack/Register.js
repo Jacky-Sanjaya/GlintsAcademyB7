@@ -6,6 +6,8 @@ import {
   TouchableOpacity,
   Text,
   TextInput,
+  Keyboard,
+  TouchableWithoutFeedback,
   Alert,
 } from 'react-native';
 import axios from 'axios';
@@ -34,20 +36,27 @@ export default function Register({navigation}) {
       });
 
       navigation.navigate('Login');
-      if ((user = '' || password)) {
-        Alert.alert('isi');
-      }
+      // if ((user = '' || password)) {
+      //   Alert.alert('isi');
+      // }
       console.log(apiLogin.data.data);
     } catch (error) {
       console.log(error);
     }
   };
 
+  // const DismissKeyboard = ({children}) => (
+  //   <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+  //     {children}
+  //   </TouchableWithoutFeedback>
+  // );
+
   return (
     <ImageBackground
       source={require('../src/wp5594572.png')}
       style={styles.imageBackground}>
       <Text style={styles.header}>Register</Text>
+
       <View style={styles.container}>
         <Text style={styles.name}>Name</Text>
         <TextInput
@@ -64,10 +73,12 @@ export default function Register({navigation}) {
         <Text style={styles.name}>Password</Text>
         <TextInput
           placeholder="Password"
+          secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
           style={styles.input1}
         />
       </View>
+
       <TouchableOpacity
         style={styles.button}
         title="Go to HOME"
@@ -109,8 +120,6 @@ const styles = StyleSheet.create({
     height: 50,
     marginBottom: 30,
     borderRadius: 30,
-    backgroundColor: '#709fb0',
-    opacity: 0.5,
   },
   header: {
     fontSize: 40,

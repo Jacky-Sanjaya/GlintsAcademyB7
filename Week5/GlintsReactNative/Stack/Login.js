@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, ImageBackground, Text} from 'react-native';
 import {
+  View,
+  StyleSheet,
+  ImageBackground,
   TextInput,
   TouchableOpacity,
+  Text,
+  Keyboard,
   TouchableWithoutFeedback,
-} from 'react-native-gesture-handler';
+} from 'react-native';
+
 import axios from 'axios';
 import Textheader from '../components/textheader';
 
@@ -28,7 +33,7 @@ export default function LoginIndex({navigation}) {
         }),
       });
 
-      navigation.navigate('Home');
+      navigation.navigate('Drawers');
 
       console.log(apiLogin.data.data);
     } catch (error) {
@@ -36,13 +41,21 @@ export default function LoginIndex({navigation}) {
     }
   };
 
+  // const DismissKeyboard = ({children}) => (
+  //   <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+  //     {children}
+  //   </TouchableWithoutFeedback>
+  // );
+
   return (
     <ImageBackground
       source={require('../src/wp5594572.png')}
       style={styles.imageBackground}>
       <Text style={styles.header}>Login</Text>
+
       <View style={styles.container}>
         <Text style={styles.name}>Username</Text>
+
         <TextInput
           placeholder="Username"
           autoCapitalize="none"
@@ -50,15 +63,18 @@ export default function LoginIndex({navigation}) {
           textContentType="username"
           style={styles.input1}
         />
+
         <Text style={styles.name}>Password</Text>
         <TextInput
           placeholder="Password"
           autoCapitalize="none"
+          secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
           autoCompleteType="password"
           style={styles.input2}
         />
       </View>
+
       <TouchableOpacity style={styles.login} onPress={() => handleLogin()}>
         <Text>Login</Text>
       </TouchableOpacity>
