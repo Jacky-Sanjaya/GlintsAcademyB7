@@ -1,0 +1,51 @@
+.container {
+	display: flex;
+	flex: 1;
+	height: 1100px;
+	background-color: #1a3150;
+}
+
+.btn-container {
+	margin-left: auto;
+	margin-top: 100px;
+	margin-right: auto;
+}
+.btn {
+	background-color: #fdcb5a;
+	border-radius: 10px;
+	margin: 20px;
+	width: 75px;
+	height: 50px;
+}
+.text {
+	text-align: center;
+	color: #fff;
+}
+
+.counter {
+	margin-top: 100px;
+	margin-bottom: 75px;
+}
+
+.image {
+	margin-left: 82.5px;
+	margin-right: 82.5px;
+	width: 70px;
+	height: 100px;
+	object-fit: cover;
+	object-position: 0px;
+}
+
+.image1 {
+	margin-left: 82.5px;
+	margin-right: 82.5px;
+	width: 70px;
+	height: 100px;
+	object-fit: cover;
+	object-position: -70px;
+}
+
+.list {
+	font-size: 40px;
+	color: #fff;
+}
