@@ -45,7 +45,7 @@ const LoginScreen = ({ navigation }) => {
                 </View>
 
                 <View style={styles.inputContainer}>
-                    {/* <MaterialCommunityIcons name='lock' color='blue' size={40} /> */}
+                    {/* <MaterialCommunityIcons name='lock' color='blue' size={40} />   */}
                     <View>
                         <Text style={styles.labelText}>Password</Text>
                         <TextInput
